@@ -38,8 +38,8 @@ namespace Game_RockPaperScissors
 				case 2:
 					Console.WriteLine("How many players?");
 					string num_of_players = Console.ReadLine();
-					int numOfPlayers = int.Parse(num_of_players);
-					play.SetNumOfPlayers(numOfPlayers);
+					int num_of_players_int = int.Parse(num_of_players);
+					play.SetNumOfPlayers(num_of_players_int);
 					int[] players = new int[play.numOfPlayers];
 					int rounds = 0;
 					for (int i = 1; i < players.Length; i++) //Count number of rounds
